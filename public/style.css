@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
 }
+.main-cotainer{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
 h1{
     height: 10vh;
     background-color:#128C7E;
@@ -48,8 +53,8 @@ input{
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.799);
     border: 0px solid;
-    padding: 0px 10px; 
-    font-size: 15px;
+    padding: 0px 0.5rem; 
+    font-size: 1rem;
     font-weight: 500;   
 }
 input:focus{
@@ -60,7 +65,7 @@ button{
     width: 5vh;
     display: flex;
     justify-content: center;
-    padding-left: 5px;
+    padding-left: 0.5rem;
     align-items: center;
     border-radius: 50%;
     background-color: #25d366;
@@ -71,38 +76,32 @@ button:hover{
     background-color: green;
 }
 .sender{
-    width: 20vw;
-    min-height: 7vh;
+    max-width: 20vw;
+    height: max-content;
     border-radius: 0.5rem 0rem 0.5rem 0rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: flex-start;
-    text-wrap:wrap;
     background-color: #075E54;
     color: white;
     padding: 0.5vw;
     align-self: flex-end;
 }
 .para{
-    width: 19vw;
+    width:100%;
     word-break: break-all;
     min-height: 5vh;
     text-wrap: wrap;
-    flex-wrap: wrap;
     display: flex;
     align-items: center;
 }
 .recieved{
-    width: 20vw;
-    min-height: 7vh;
+    max-width: 20vw;
+    height: max-content;
     border-radius: 0rem 0.5rem 0rem 0.5rem;
     display: flex;
     flex-direction: column;
     text-wrap:wrap;
     background-color: #313335;
     color: white;
-    padding: 10px;
+    padding: 0.5vw;
     align-self: flex-start;
 }
 
@@ -128,13 +127,29 @@ button:hover{
 }
 .span{
     color:orange;
-    width: 19vw;
-    font-size: 14px;
+    width: 100%;
+    font-size: 1rem;
     font-weight: 700;
 }
 .span2{
-    width: 19vw;
+    width: 100%;
     color:blueviolet;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 700;
+}
+
+@media(max-width:431px){
+   input{
+        width: 80vw;
+   }
+   form{
+    gap: 1vh;
+   }
+   .sender,.recieved{
+    max-width: 60vw;
+    padding: 1vw;
+   }
+   .span,.span2,.para{
+    width: 100%;
+   }
 }

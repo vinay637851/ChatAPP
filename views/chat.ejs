@@ -8,14 +8,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome Online Chat APP</h1>
-    <div class="container">
-        <div class="message">
+    <div class="main-cotainer">
+        <h1>Welcome Online Chat APP</h1>
+        <div class="container">
+            <div class="message">
+            </div>
+            <form action="">
+                <input type="text" id="data" placeholder="Type something..." autofocus autocomplete="off">
+                <button type="submit"><div class="bajo"></div></button>
+            </form>
         </div>
-        <form action="">
-            <input type="text" id="data" placeholder="Type something..." autofocus autocomplete="off">
-            <button type="submit"><div class="bajo"></div></button>
-        </form>
     </div>
 </body>
 <script src="/socket.io/socket.io.js"></script>
