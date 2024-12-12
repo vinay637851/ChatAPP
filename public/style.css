@@ -20,14 +20,14 @@ h1{
     width: 100vw;
     height: 90vh;
     display: flex;
+    background-color: black;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 .message{
-    background-color: black;
     gap: 1vh;
-    height: 80vh;
+    height: 75vh;
     color: white;
     padding: 20px;
     width: 100vw;
@@ -37,12 +37,11 @@ h1{
     overflow: auto;
 }
 form{
-    height: 10vh;
+    height: 15vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
     gap: 4vh;
 }
 input{
@@ -139,8 +138,21 @@ button:hover{
 }
 
 @media(max-width:431px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        height: 100vh;
+        overflow: hidden;
+    }
    input{
         width: 80vw;
+   }
+   .main-cotainer{
+    height: 100vh;
+    overflow: hidden;
    }
    form{
     gap: 1vh;
