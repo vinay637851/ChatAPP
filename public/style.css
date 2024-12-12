@@ -50,7 +50,7 @@ input{
     word-break: break-all;
     text-wrap: wrap;
     border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.799);
+    background-color: rgba(255, 255, 255, 0.9);
     border: 0px solid;
     padding: 0px 0.5rem; 
     font-size: 1rem;
@@ -164,4 +164,9 @@ button:hover{
    .span,.span2,.para{
     width: 100%;
    }
+}
+@media(max-width:361px){
+    h1{
+        font-size: 1.7rem;
+    }
 }
