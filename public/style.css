@@ -27,7 +27,7 @@ h1{
 }
 .message{
     gap: 1vh;
-    height: 75vh;
+    height: 80vh;
     color: white;
     padding: 20px;
     width: 100vw;
@@ -37,7 +37,7 @@ h1{
     overflow: auto;
 }
 form{
-    height: 15vh;
+    height: 10vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -143,16 +143,8 @@ button:hover{
         padding: 0;
         box-sizing: border-box;
     }
-    html{
-        height: 100vh;
-        overflow: hidden;
-    }
    input{
         width: 80vw;
-   }
-   .main-cotainer{
-    height: 100vh;
-    overflow: hidden;
    }
    form{
     gap: 1vh;
