@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1{
+    height: 10vh;
+    background-color:#128C7E;
+    color: white;
+    text-align: center;
+    line-height: 10vh;
+}
+.container{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.message{
+    background-color: black;
+    gap: 1vh;
+    height: 80vh;
+    color: white;
+    padding: 20px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    overflow: auto;
+}
+form{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    gap: 4vh;
+}
+input{
+    height: 5vh;
+    width: 30vw;
+    word-break: break-all;
+    text-wrap: wrap;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.799);
+    border: 0px solid;
+    padding: 0px 10px; 
+    font-size: 15px;
+    font-weight: 500;   
+}
+input:focus{
+    outline: none;
+}
+button{
+    height: 5vh;
+    width: 5vh;
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #25d366;
+    cursor: pointer;
+    border: 0px solid;
+}
+button:hover{
+    background-color: green;
+}
+.sender{
+    width: 20vw;
+    min-height: 7vh;
+    border-radius: 0.5rem 0rem 0.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;
+    text-wrap:wrap;
+    background-color: #075E54;
+    color: white;
+    padding: 0.5vw;
+    align-self: flex-end;
+}
+.para{
+    width: 19vw;
+    word-break: break-all;
+    min-height: 5vh;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+.recieved{
+    width: 20vw;
+    min-height: 7vh;
+    border-radius: 0rem 0.5rem 0rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-wrap:wrap;
+    background-color: #313335;
+    color: white;
+    padding: 10px;
+    align-self: flex-start;
+}
+
+
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 0.5vh; 
+}
+::-webkit-scrollbar-corner{
+    display: none;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 0.25vh;
+    width: 0.5vh;
+}
+.bajo{
+    height: 3vh;
+    width: 3vh;
+    background-color: white;
+    clip-path: polygon(0% 0%,100% 50%,0% 100%,10% 70%,50% 50%,10% 30%);
+}
+.span{
+    color:orange;
+    width: 19vw;
+    font-size: 14px;
+    font-weight: 700;
+}
+.span2{
+    width: 19vw;
+    color:blueviolet;
+    font-size: 14px;
+    font-weight: 700;
+}
