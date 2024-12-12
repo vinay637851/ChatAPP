@@ -161,4 +161,10 @@ button:hover{
     h1{
         font-size: 1.7rem;
     }
+    .message{
+        height: 70vh;
+    }
+    form{
+        height: 20vh;
+    };
 }
