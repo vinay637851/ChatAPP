@@ -18,6 +18,13 @@ io.on('connect',function(User){
     User.on("send-message",function(chat){
         io.emit('received-message',chat,id);
     })
+    User.on("received-message",function(data){
+        let chat="";
+        io.emit('received-message',chat,id);
+    })
+    User.on('update-typing',function(data){
+        io.emit('update-typing',id);
+    })
 })
 
 

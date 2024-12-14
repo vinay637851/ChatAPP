@@ -157,6 +157,9 @@ button:hover{
     width: 100%;
    }
 }
+.img{
+    height: 1vw;
+}
 @media(max-width:361px){
     h1{
         font-size: 1.7rem;
