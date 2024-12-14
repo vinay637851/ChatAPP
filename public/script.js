@@ -45,9 +45,11 @@ socket.on('received-message',function(chat,id){
 socket.on("update-typing",function(id){
     for(let i=container.children.length-1;i>=0;i--){
         if(container.children[i].classList.contains('recieved')&&container.children[i].children[0].innerHTML==id){
-            container.removeChild(container.children[i]);
-            prevId=null;
-            break;
+            if(container.children[i].children[1].innerHTML=="Typing..."){
+                container.removeChild(container.children[i]);
+                prevId=null;
+                break;
+            }
         }
     }
 })
