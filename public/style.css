@@ -9,25 +9,54 @@
     height: 100vh;
     overflow: hidden;
 }
-h1{
-    height: 10vh;
+.nav{
+    height: 7vh;
     background-color:#128C7E;
     color: white;
-    text-align: center;
-    line-height: 10vh;
+    display: flex;
+    padding: 0rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap:4vh;
+}
+span{
+    color: orange;  
+}
+.nav #para{
+    font-size: 1rem;
+    font-weight: 600;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+}
+i{
+    font-size: 2.3rem;
+    color: white;
+}
+img{
+    height: 6vh;
 }
 .container{
     width: 100vw;
-    height: 90vh;
+    height: 93vh;
     display: flex;
-    background-color: black;
+    background-image: url('chatback.jpg');
+    background-position: center;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 .message{
     gap: 1vh;
-    height: 80vh;
+    height: 83vh;
     color: white;
     padding: 20px;
     width: 100vw;
@@ -156,9 +185,12 @@ button:hover{
    .span,.span2,.para{
     width: 100%;
    }
-}
-.img{
-    height: 1vw;
+   .nav{
+    padding: 0rem 1.5rem;
+   }
+   .nav #para,.logo{
+    gap: 1vh;
+   }
 }
 @media(max-width:361px){
     h1{
@@ -169,5 +201,8 @@ button:hover{
     }
     form{
         height: 20vh;
-    };
+    }
+    .nav{
+        padding:0rem 1rem;
+    }
 }
