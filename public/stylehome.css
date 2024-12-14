@@ -95,3 +95,8 @@ a{
         height: 7vh;
     }
 }
+@media(max-width:361px) {
+    h1{
+        font-size: 1.7rem;
+    }
+}
