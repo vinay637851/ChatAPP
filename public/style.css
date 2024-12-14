@@ -104,6 +104,7 @@ button:hover{
     background-color: green;
 }
 .sender{
+    min-width: 12vw;
     max-width: 20vw;
     height: max-content;
     border-radius: 0.5rem 0rem 0.5rem 0rem;
@@ -121,6 +122,7 @@ button:hover{
     align-items: center;
 }
 .recieved{
+    min-width: 12vw;
     max-width: 20vw;
     height: max-content;
     border-radius: 0rem 0.5rem 0rem 0.5rem;
@@ -180,6 +182,7 @@ button:hover{
    }
    .sender,.recieved{
     max-width: 60vw;
+    min-width: 40vw;
     padding: 1vw;
    }
    .span,.span2,.para{
@@ -195,6 +198,12 @@ button:hover{
 @media(max-width:361px){
     h1{
         font-size: 1.7rem;
+    }
+    .sender{
+        min-width: 40vw;
+    }
+    .recieved{
+        min-width: 40vw;
     }
     .message{
         height: 70vh;
