@@ -20,6 +20,9 @@ io.on('connect',function(User){
     }
     UserData="";
     arr.push(Detail);
+    User.on("added",function(data){
+        io.emit('added',arr);
+    })
     User.on("send-message",function(chat){
         io.emit('received-message',chat,id,arr);
     })
@@ -29,6 +32,9 @@ io.on('connect',function(User){
     })
     User.on('update-typing',function(data){
         io.emit('update-typing',id,arr);
+    })
+    User.on("disconnect",function(){
+        io.emit('dis-connect',id,arr);
     })
 })
 

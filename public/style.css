@@ -58,7 +58,7 @@ img{
     gap: 1vh;
     height: 83vh;
     color: white;
-    padding: 20px;
+    padding: 1vh 1vh 1vh 0.5vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -68,6 +68,7 @@ img{
 form{
     height: 10vh;
     width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,11 +113,12 @@ button:hover{
     color: white;
     padding: 0.5vw;
     align-self: flex-end;
+    position: relative;
 }
 .para{
     width:100%;
-    word-break: break-all;
-    min-height: 5vh;
+    word-break:break-word;  
+    min-height: max-content;    
     text-wrap: wrap;
     display: flex;
     align-items: center;
@@ -167,7 +169,22 @@ button:hover{
     font-size: 1rem;
     font-weight: 700;
 }
-
+.time{
+    width: max-content;
+    font-size: 0.7rem;
+    color: #999;
+    place-self:flex-end;
+}
+.newjoin{
+    place-self: center;
+    height: max-content;
+    padding: 0.5vh 2vh;
+    width: max-content;
+    background-color: #2c3035;
+    color: #888;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+}
 @media(max-width:431px){
     *{
         margin: 0;
@@ -206,12 +223,47 @@ button:hover{
         min-width: 40vw;
     }
     .message{
-        height: 70vh;
+        height: 83vh;
     }
     form{
-        height: 20vh;
+        height: 10vh;
     }
     .nav{
         padding:0rem 1rem;
+    }
+}
+@media (max-width: 768px) and (min-width:432px) {
+    .sender,.recieved{
+        max-width: 60vw;
+        min-width: 40vw;
+    }
+    input{
+        width: 70vw;
+    }
+}
+@media(max-width:1139px) and (min-width:768px){
+    .sender,.recieved{
+        max-width: 50vw;
+        min-width: 30vw;
+        font-size: 1rem;
+    }
+    .span,.span2{
+        font-size: 1rem;
+    }
+    .newjoin,.time{
+        font-size: 0.8rem;
+    }
+    input{
+        font-size: 1rem;
+        width: 70vw;
+    }
+    .logo p{
+        font-size: 1rem;
+    }
+    .nav #para{
+        font-size: 1rem;
+    }
+    i{
+        font-size: 2rem;
     }
 }
