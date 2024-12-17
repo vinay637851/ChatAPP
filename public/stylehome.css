@@ -16,6 +16,11 @@ h1{
     text-align: center;
     line-height: 10vh;
 }
+h3{
+    color: #666;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: scaleY(1.2);
+}
 .container{
     height: 90vh;
     width: 100vw;
